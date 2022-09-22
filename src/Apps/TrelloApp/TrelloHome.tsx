@@ -11,7 +11,7 @@ export const TrelloHome: FC = () => (
 );
 
 const SImg = css`
-  background: url(../img/southern-country.jpeg);
+  background: url('../img/southern-country.jpeg');
   background-repeat: no-repeat;
   height: 100vh;
 `;
