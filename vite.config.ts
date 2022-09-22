@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
-import path from 'path';
+import path, { join } from 'path';
 import { readdirSync } from 'fs';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // インポートする際のエイリアスを動的に作成する。
 const absolutePathAliases: { [key: string]: string } = {};
@@ -32,13 +33,15 @@ export default defineConfig({
         },
       },
     }),
+    tsconfigPaths(), //vite-tsconfig-paths
   ],
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' },
   },
   resolve: {
     alias: {
-      ...absolutePathAliases,
+      // ...absolutePathAliases,
+      '~/': `${__dirname}/src/`,
     },
   },
 });
