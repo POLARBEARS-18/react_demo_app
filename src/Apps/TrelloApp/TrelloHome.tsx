@@ -1,9 +1,9 @@
 import { css } from '@emotion/react';
-import React from 'react';
+import React, { FC } from 'react';
 import { Header } from './components/Header';
 import { TaskCards } from './components/tasks/TaskCards';
 
-export const TrelloHome = () => (
+export const TrelloHome: FC = () => (
   <div css={[SImg]}>
     <Header />
     <TaskCards />

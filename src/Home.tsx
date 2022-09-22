@@ -2,19 +2,16 @@ import { css } from '@emotion/react';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-export const Home: FC = () => {
-  const a = 'a';
-  return (
-    <div css={SCenter}>
-      <Link css={[SHoverDragDrop('#e63434')]} to="/drag_drop_practice">
-        ドラッグドロップdemo
-      </Link>
-      <Link css={[SHoverDragDrop('#3449e6')]} to="/trello_home">
-        Trelloアプリ
-      </Link>
-    </div>
-  );
-};
+export const Home: FC = () => (
+  <div css={SCenter}>
+    <Link css={[SHoverDragDrop('#e63434')]} to="/drag_drop_practice">
+      ドラッグドロップdemo
+    </Link>
+    <Link css={[SHoverDragDrop('#3449e6')]} to="/trello_home">
+      Trelloアプリ
+    </Link>
+  </div>
+);
 
 const SCenter = css`
   /* color: #e63434; */
