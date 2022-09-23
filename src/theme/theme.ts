@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
 export const theme = extendTheme({
@@ -12,6 +12,12 @@ export const theme = extendTheme({
       },
     },
   },
+});
+
+const config: ThemeConfig = {
   initialColorMode: 'light',
   useSystemColorMode: true,
-});
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
+export const colorTheme = extendTheme({ config });
