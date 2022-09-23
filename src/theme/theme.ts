@@ -14,10 +14,7 @@ export const theme = extendTheme({
   },
 });
 
-const config: ThemeConfig = {
+export const config: ThemeConfig = {
   initialColorMode: 'light',
   useSystemColorMode: true,
 };
-
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-export const colorTheme = extendTheme({ config });
