@@ -1,6 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
 export const theme = extendTheme({
   styles: {
     global: {
@@ -12,4 +11,6 @@ export const theme = extendTheme({
       },
     },
   },
+  initialColorMode: 'light',
+  useSystemColorMode: true,
 });
