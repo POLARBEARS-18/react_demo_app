@@ -7,7 +7,7 @@ export const Home: FC = () => (
     <Link css={[SHoverDragDrop('#e63434')]} to="/drag_drop_practice">
       ドラッグドロップdemo
     </Link>
-    <Link css={[SHoverDragDrop('#3449e6')]} to="/trello_home">
+    <Link css={[SHoverDragDrop('#58e634')]} to="/trello_home">
       Trelloアプリ
     </Link>
   </div>
